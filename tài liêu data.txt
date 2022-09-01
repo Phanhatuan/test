@@ -1,0 +1,2 @@
+Oder by dùng để sắp xếp dữ liệu theo thứ tự tăng dần hoặc giảm dần 
+trong đó DESC dùng để sắp xếp giảm dần . ASC được sử dụng để sắp xếp giảm dần.

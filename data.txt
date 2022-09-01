@@ -1,0 +1,12 @@
+
+from : Địa chỉ
+Like : so sánh gần giống 
+SQL  excution order : From --> where --> select --> order by -->limit(Top N[PERCENT])	
+
+select ProductID
+	,ProductNumber
+	,Name
+form SalesLT.Product
+WHERE ProductNumber Like 'FR-%'
+	AND( Name LIKE '%HL%' OR Name LIKE '%Mountain%')
+dap an:47 rows

@@ -1,0 +1,22 @@
+# Getting and Knowing Data  ( đặt tên cho cái input)
+import pandas as pd 
+import numpy as np
+## Step 1 : import Dataset
+ in : df = pd .read_csv("chipotle.tsv" , sep = "\t")  (df : dataframe) ( tsv : comma - Separated Values  : dau phay)
+ in : df.head (5) (show ra du lieu . .. return 5 dong dau tien )
+##Step 2 : Dataset Overview 
+in : df.shape 
+out : (4622,5) ( show ra 2 gia tri la row , column) (tuc la co 4622 dong dataframe va trong moi dong se co 5 cot )
+in :  df.info()
+out : return cho toan bo thong tin cua cac cot 
+ in : #print all columns ' name
+	df.columns
+out : return  thanh 1 cai chuoi . gom ten cua 5 cai colu,s
+in  : df.index 
+in  : df.describe() (return .. show ra duoc cac columns co kieu du lieu la Int)
+	df.describe ( include = "all" ) return tat ca cac gia tri 
+### locatision (loc)   vs index locatision (iloc )
+ in : df .head ()
+ out : return 5 mon hang dau tien
+in :  #select all rows with multiple conditions)
+	df.loc [df.quantity == 15 | (df. item_name == " nantucket Nectar ")]
